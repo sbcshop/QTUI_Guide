@@ -11,5 +11,20 @@ $g++ --version
 $make --version
 ```
 After this head to download online installer for open source version :
-Download Open Source [QT Community Edition](https://www.qt.io/download-qt-installer-oss?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4) 
+[Download QT Community Edition](https://www.qt.io/download-qt-installer-oss?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4) 
 
+We need to make downloaded file as executable. Also, will libxcb-xinerama0 for installer to run
+Setup Commands Used:
+```
+$ chmod +x qt-unified-linux-x64-4.6.1-online.run
+$ sudo apt install --reinstall libxcb-xinerama0 
+$ ./qt-unified-linux-x64-4.6.1-online.run
+```
+
+Once you are done installing QT, you might face issue loading QT creator.
+<img src="https://media.discordapp.net/attachments/1193090729845723168/1193101468031533139/10wPE.png?ex=65ab7d54&is=65990854&hm=bf88879267651d2c9b5db186da14ee382d7dbb28542918c78af80d621971d4ec&=&format=webp&quality=lossless&width=1245&height=210">
+
+So, to solve above issue you need to install libxcb-cursor0 which helps in loading QTcreator
+```
+$ sudo apt-get install libxcb-cursor0
+```
