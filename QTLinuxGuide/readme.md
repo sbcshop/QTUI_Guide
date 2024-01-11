@@ -1,4 +1,4 @@
-### QT for Linux/X11 (mostly focus Ubuntu 22.04.3 LTS) instructions
+## QT for Linux/X11 (mostly focus Ubuntu 22.04.3 LTS) instructions
 
 Commands to get essential C++ tools first before QT creator download and installation,
 ```
